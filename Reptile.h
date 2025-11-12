@@ -5,18 +5,21 @@
 
 //define reptile class here
 
-class Reptile : public Animal
-{
-    public:
-        Reptile();
-        Reptile(bool isVenomous);
-        virtual ~Reptile();
-
-        unsigned bool GetisVenomous() { return isVenomous; }
-        void SetisVenomous() { const isVenomous; }
-
-    private:
-    bool isVenomous;
+class Mammal : public Animal {
+private:
+    string furColor;
+public:
+    Mammal() : Animal(){
+       
+    }
+    Mammal(string name, int age, bool isHungry, string furColor) : Animal(name, age, isHungry){
+       
+    }
+    virtual ~Mammal(){}
+    void display(){
+        
+        
+    }
 };
 
 
