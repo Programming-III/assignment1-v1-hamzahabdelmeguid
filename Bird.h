@@ -10,7 +10,7 @@ class Bird : public Animal
          float wingSpan;
     public:
         Bird();
-        Bird(float wingSpan);
+        Bird(string name, int age, bool isHungry, float wingSpan) : Animal(name, age, isHungry);
         virtual ~Bird();
 
    
