@@ -10,7 +10,7 @@ class Mammal : public Animal
         string furColor;
     public:
         Mammal();
-        Mammal(string furColor);
+        Mammal(string name, int age, bool isHungry, string furColor) : Animal(name, age, isHungry);
         virtual ~Mammal();
 
 
